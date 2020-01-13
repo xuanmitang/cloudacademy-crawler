@@ -75,7 +75,7 @@ class videoSpider(scrapy.Spider):
             for chunk in videoResult.iter_content(chunk_size=1024 * 1024):
                 if chunk:
                     f.write(chunk)
-        print("success")
+        print("success download video...", file_name)
 
     def split(self, str, beginStr, endStr):
         beginIndex = str.index(beginStr)
