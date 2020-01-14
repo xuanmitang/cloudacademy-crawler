@@ -1,1 +1,4 @@
 .idea
+output
+cookies.txt
+__pycache__

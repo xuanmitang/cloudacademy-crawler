@@ -1,0 +1,2544 @@
+{
+  "form": {},
+  "thunk": {
+    "pending": {},
+    "failure": {},
+    "done": {},
+    "complete": {}
+  },
+  "user": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inh1YW5taXRhbmdAZ21haWwuY29tIiwib3JpZ19pYXQiOjE1Nzg4ODM3MDAsImZlYXR1cmVzIjpbXSwiY29ybl9jb21wYW55X2FjY291bnRfaWQiOm51bGwsImNvbXBhbnlfYWNjb3VudF9pZCI6bnVsbCwibWVtYmVyc2hpcF90aWVyIjoiaW5kaXZpZHVhbC15ZWFybHkiLCJ1c2VyX2lkIjoyNTcwNzcsImN1c3RvbWVyX2xpZmVjeWNsZSI6InRyaWFsLWFjdGl2ZSIsInRlbmFudF9pZCI6ImNsb3VkYWNhZGVteSIsImNvbXBhbnlfYWNjb3VudF9kb2VzX2NyZWF0ZV9wdWJsaWNfY29udGVudCI6bnVsbCwiYWN0b3JfaWQiOiI1ZTE4M2Q2ZjIyYzNmMjBiMjJjMGJlZmEiLCJleHAiOjE1Nzg4ODQ5MDAsImVtYWlsIjoieHVhbm1pdGFuZ0BnbWFpbC5jb20ifQ.4g-COvTsV0umjOgaDgcmGPCa3oJFdQWIkqMHU8GCBVU",
+    "logged": true,
+    "data": {
+      "actor_id": "5e183d6f22c3f20b22c0befa",
+      "id": 257077,
+      "public_profile_id": "c4d8cf6f-8622-4aab-8cf5-ec05fa585e32",
+      "first_name": "xuan",
+      "last_name": "mitang",
+      "email": "xuanmitang@gmail.com",
+      "avatar": "https:\u002F\u002Fassets-users.cloudacademy.com\u002Fthumbnails\u002FXMA_100_100.jpg",
+      "features": [],
+      "customer_lifecycle": "trial-active",
+      "subscription": {
+        "is_business": false,
+        "_id": "5e1bda6b30b732003407dcf5",
+        "system": "recurly",
+        "expires_at": "2020-01-20T02:48:08.000Z",
+        "plan": {
+          "code": "professional-plus",
+          "name": "Personal"
+        }
+      },
+      "company_membership": null,
+      "membership_tier": "individual-yearly",
+      "creation_date": "2020-01-13T02:48:05.750Z",
+      "skills_overall": {
+        "score": null,
+        "leaderboard": null,
+        "level": ""
+      },
+      "is_team_admin": false,
+      "enterprise_actions": [],
+      "default_company": null,
+      "user_actions": [
+        {
+          "action": "SHOW_LIBRARY",
+          "active": true,
+          "reason": null
+        },
+        {
+          "action": "MEMBERS_LEADERBOARD_VIEW",
+          "active": true,
+          "reason": null
+        }
+      ]
+    },
+    "error": null,
+    "sso_login_url": null,
+    "next": null
+  },
+  "companyswitcher": {
+    "switcherCompanies": {
+      "count": 0,
+      "results": [],
+      "params": {}
+    },
+    "switcherCompany": {
+      "id": null,
+      "name": ""
+    },
+    "switcherPermission": [],
+    "error": {}
+  },
+  "enterprisepermissions": {
+    "account": {
+      "id": null,
+      "actions": {}
+    },
+    "default_account": {
+      "actions": {}
+    },
+    "system": {
+      "actions": {}
+    },
+    "team": {
+      "id": null,
+      "actions": {}
+    },
+    "user": {
+      "actions": {
+        "SHOW_LIBRARY": {
+          "action": "SHOW_LIBRARY",
+          "active": true,
+          "reason": null
+        },
+        "MEMBERS_LEADERBOARD_VIEW": {
+          "action": "MEMBERS_LEADERBOARD_VIEW",
+          "active": true,
+          "reason": null
+        }
+      }
+    },
+    "error": {}
+  },
+  "algolia": {
+    "errors": {},
+    "generalSearchIndex": "prod-general",
+    "sortByDateIndex": "prod-sort-by-date",
+    "appId": "OW4AAWBH4S",
+    "key": "Y2Y5OTcyYjc5MjhmMmFhYzAxNGQ1NmY5YjY4MGM4MzVhOWNkMzA5NmE1YWYwOTIyYWM2MDIwZGViNjRmMzBkYWZpbHRlcnM9JTI4JTI4b3duZXJfaWQrJTNEKzAlMjklMjkrQU5EKyUyOCUyOGNvbnRlbnRfYWNjZXNzX2ZlYXR1cmVzKyUzRCswJTI5JTI5JnVzZXJUb2tlbj14dWFubWl0YW5nJTQwZ21haWwuY29tJnZhbGlkVW50aWw9MTU3ODk3MDE5MQ==",
+    "progresses": {},
+    "progRequested": [],
+    "hosts": [
+      "OW4AAWBH4S-dsn.algolia.net",
+      "search.cloudacademy.com"
+    ],
+    "product_list": [
+      "lp",
+      "course",
+      "lab",
+      "quiz",
+      "exam",
+      "resource",
+      "blogpost",
+      "question"
+    ],
+    "querySuggestionIndex": "prod-query-suggestions"
+  },
+  "selfservedemo": {
+    "error": {}
+  },
+  "publicassessment": {
+    "results": [],
+    "error": null
+  },
+  "useronboarding": {
+    "userData": {
+      "firstName": "",
+      "lastName": ""
+    },
+    "error": {},
+    "errorStatus": null
+  },
+  "usersettings": {
+    "discount_info": {},
+    "error": {}
+  },
+  "contextualquestion": {
+    "count": 0,
+    "error": "",
+    "params": {},
+    "results": [],
+    "relatedQuizzes": null,
+    "answers": null,
+    "answerError": {}
+  },
+  "analyticsreport": {
+    "consumption": [],
+    "user-time-usage": [],
+    "error": {}
+  },
+  "crew": {
+    "crew": []
+  },
+  "enterprisecsm": {
+    "office_hours": [],
+    "support_manager": null,
+    "config": {
+      "support_manager_email": "",
+      "bcc_list": [],
+      "office_hours": [
+        {
+          "start_time": "00:00",
+          "day": "monday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "tuesday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "wednesday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "thursday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "friday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "saturday",
+          "end_time": "00:00"
+        },
+        {
+          "start_time": "00:00",
+          "day": "sunday",
+          "end_time": "00:00"
+        }
+      ]
+    },
+    "postingConfig": false
+  },
+  "onboardingenterprise": {
+    "account": {
+      "active_step": "",
+      "onboarding": {},
+      "steps": []
+    },
+    "team": {
+      "active_step": "",
+      "onboarding": {},
+      "steps": []
+    },
+    "error": {}
+  },
+  "akinator": {
+    "finished": false,
+    "progress": 0,
+    "question": {}
+  },
+  "exam": {
+    "areas": [],
+    "id": null,
+    "title": "",
+    "domains": [],
+    "topics": [],
+    "compound_id": {},
+    "examDescription": "",
+    "questionsNumber": 0,
+    "availableTime": 0,
+    "successScoreThreshold": 0,
+    "actionRequired": null,
+    "session": null
+  },
+  "learningpath": {
+    "entity": {
+      "session": {}
+    },
+    "currentFeedback": null,
+    "currentBookmark": false,
+    "isEnterprise": false,
+    "isFirstResume": false,
+    "error": false,
+    "notFound": false,
+    "unauthorized": false,
+    "genericError": false,
+    "errorStatus": null,
+    "sessionError": null,
+    "entitySidebar": {
+      "isTiny": false
+    },
+    "changelog": []
+  },
+  "quiz": {
+    "details": {},
+    "errorCode": null,
+    "quizSessionId": null,
+    "quizType": null,
+    "results": {},
+    "userInteraction": null
+  },
+  "enterprisedashboard": {
+    "account_license_auto_renew": false,
+    "account_members": {
+      "count": 0,
+      "params": {
+        "order_by": "alphabetical",
+        "ordering": "asc",
+        "page": 1,
+        "page_size": 25
+      },
+      "results": []
+    },
+    "account_roles": [],
+    "api_keys": {},
+    "assessment_content": [],
+    "autocomplete_requests": {},
+    "created_join_request": false,
+    "integrations": {
+      "results": [],
+      "count": 0,
+      "params": {}
+    },
+    "join_offers": {},
+    "join_request_info": {},
+    "join_requests": {
+      "count": 0,
+      "params": {
+        "page": 1,
+        "page_size": 10
+      },
+      "results": []
+    },
+    "licenses_stats": {},
+    "member_invite_responses": {
+      "__all__": {},
+      "requests": []
+    },
+    "members_stats": [],
+    "membersReport": {
+      "download_link": null,
+      "status": "none"
+    },
+    "recurly_subscription_info": {},
+    "team_detail": {},
+    "team_invite_responses": {
+      "__all__": {},
+      "requests": []
+    },
+    "team_invited_members": {
+      "count": 0,
+      "params": {},
+      "results": []
+    },
+    "team_invites": [],
+    "team_roles": [],
+    "team_statuses": {},
+    "teams": {
+      "count": 0,
+      "params": {
+        "page": 1,
+        "page_size": 12,
+        "order_by": "name",
+        "ordering": "asc"
+      },
+      "results": []
+    },
+    "support_csv_status": {
+      "uploaded": false,
+      "uploading": false
+    },
+    "error": {}
+  },
+  "enterprisepanel": {
+    "accounts": {
+      "activities": {
+        "count": 0,
+        "results": [],
+        "params": {}
+      },
+      "cpe_config": {
+        "amount": null,
+        "frequency": null
+      },
+      "detail": {},
+      "features": {
+        "count": 0,
+        "results": [],
+        "params": {}
+      },
+      "license_model": {},
+      "list": {
+        "count": 0,
+        "results": [],
+        "params": {}
+      },
+      "pools": [],
+      "roles": [],
+      "stats": []
+    },
+    "companiesReport": {
+      "download_link": null,
+      "status": "none"
+    },
+    "error": {},
+    "profiles": []
+  },
+  "enterprisesettings": {
+    "settings": {
+      "sso": {
+        "name": "",
+        "entity_id": "",
+        "url": "",
+        "x509cert": "",
+        "is_flow_enabled": null,
+        "test_url": "",
+        "config": {
+          "security": {
+            "authnRequestsSigned": false,
+            "requestedAuthnContext": true
+          },
+          "general": {
+            "attr_last_name": "",
+            "attr_username": "",
+            "attr_user_permanent_id": "",
+            "logout_url": null,
+            "email_domains": [],
+            "attr_email": "",
+            "attr_first_name": ""
+          },
+          "extra": {
+            "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+          }
+        }
+      },
+      "okta": {
+        "metadata_url": "",
+        "entity_id": "",
+        "allowed_domains": []
+      }
+    },
+    "loading": false,
+    "error": {},
+    "isSuccess": false
+  },
+  "filter": {
+    "from": {
+      "open": false,
+      "disabled": false,
+      "searchList": [],
+      "duration": {
+        "days": 89,
+        "aggregation": "month"
+      },
+      "column": {
+        "text": "Company",
+        "apiField": "account",
+        "id": 1
+      },
+      "hasChanged": false,
+      "value": null
+    },
+    "to": {
+      "open": false,
+      "disabled": true,
+      "searchList": [],
+      "duration": {
+        "days": 89,
+        "aggregation": "month"
+      },
+      "column": {
+        "text": "Company",
+        "apiField": "account",
+        "id": 1
+      },
+      "hasChanged": false,
+      "value": null
+    },
+    "hours": [
+      {
+        "value": {
+          "days": 7,
+          "aggregation": "day"
+        },
+        "label": "last 7 days"
+      },
+      {
+        "value": {
+          "days": 29,
+          "aggregation": "day"
+        },
+        "label": "last 30 days"
+      },
+      {
+        "value": {
+          "days": 89,
+          "aggregation": "month"
+        },
+        "label": "last 90 days"
+      },
+      {
+        "value": {
+          "startOf": "isoWeek",
+          "weeks": 1,
+          "aggregation": "day"
+        },
+        "label": "last week"
+      },
+      {
+        "value": {
+          "startOf": "year",
+          "endOf": "day",
+          "aggregation": "auto"
+        },
+        "label": "this year"
+      },
+      {
+        "value": {
+          "custom": "custom",
+          "aggregation": "auto"
+        },
+        "label": "custom"
+      }
+    ],
+    "menuListLoadedFromApi": false,
+    "menuList": [
+      {
+        "enabled": false,
+        "label": "Company",
+        "apiField": "account",
+        "id": 1
+      },
+      {
+        "enabled": true,
+        "label": "Team",
+        "apiField": "team",
+        "id": 2
+      },
+      {
+        "enabled": true,
+        "label": "User",
+        "apiField": "user",
+        "id": 3
+      }
+    ],
+    "menuListEnabled": true,
+    "error": {}
+  },
+  "analytics": {
+    "data": {
+      "first_level_sidebar": [],
+      "first_level_sidebar_req_params": [],
+      "second_level_sidebar": [],
+      "second_level_sidebar_req_params": [],
+      "main": {},
+      "main_req_params": []
+    },
+    "leaderboard": {
+      "data": [],
+      "total": 1,
+      "page": 1,
+      "selectedTab": 0,
+      "highlightUser": null
+    },
+    "apiParams": {
+      "product": "overall",
+      "filter": "time_spent",
+      "entity_id": -1,
+      "entity_title": "",
+      "detail_level": 1
+    },
+    "error": {}
+  },
+  "testassignments": {
+    "assignees": {
+      "active": {
+        "count": 0,
+        "params": {},
+        "results": []
+      },
+      "inactive": {
+        "count": 0,
+        "params": {},
+        "results": []
+      }
+    },
+    "content": [],
+    "detail": {
+      "assigner": {
+        "avatar": "",
+        "email": "",
+        "external_id": null,
+        "first_name": "",
+        "id": null,
+        "last_name": ""
+      },
+      "auto_nudge": true,
+      "avg_score": 80,
+      "creation_date": null,
+      "due_date": null,
+      "duration": null,
+      "end_date": null,
+      "id": null,
+      "objectives": "",
+      "pace_offset": null,
+      "progress": null,
+      "status": "",
+      "start_date": null,
+      "team": {
+        "id": null,
+        "name": ""
+      },
+      "title": ""
+    },
+    "error": {},
+    "list": {
+      "count": 0,
+      "params": {},
+      "results": []
+    },
+    "skills": {}
+  },
+  "assignments": {
+    "checkUser": {
+      "active_assignments": [],
+      "can_assign": true
+    },
+    "current": {
+      "deadline": {
+        "effort": "",
+        "workingDays": ""
+      },
+      "template": {
+        "duration": 0,
+        "id": null,
+        "title": "",
+        "minAvailableDate": null
+      }
+    },
+    "teamsDetail": {
+      "active_assessment_step_onboarding": false,
+      "active_training_plan_step_onboarding": false,
+      "assessment_assignments": [],
+      "id": 0,
+      "internal_name": "",
+      "members_count": 0,
+      "memberships": [],
+      "parsed_excluded": [],
+      "training_plan_assignments": []
+    },
+    "teams": [],
+    "templates": [],
+    "validation": {}
+  },
+  "assessments": {
+    "assignmentsCount": 0,
+    "assignmentDetail": {},
+    "assignmentsParams": {
+      "page": 1,
+      "page_size": 10
+    },
+    "assignmentSkills": {},
+    "assignments": [],
+    "current": {},
+    "error": {},
+    "report": {}
+  },
+  "cardmodal": {
+    "open": false,
+    "modal_type": "",
+    "card_data": {}
+  },
+  "assessmentsuser": {
+    "assessment": null,
+    "currentStep": {
+      "step": null,
+      "index": 0
+    },
+    "error": {},
+    "onboardingSteps": [
+      {
+        "title": "Signup",
+        "icon": "info",
+        "status": "complete"
+      },
+      {
+        "title": "Test Your Skills",
+        "icon": "star",
+        "status": "selected"
+      },
+      {
+        "title": "Access Training",
+        "icon": "dashboard",
+        "status": "locked"
+      }
+    ]
+  },
+  "trainingplan": {
+    "assignments": [],
+    "assignmentsCount": 0,
+    "assignmentsParams": {
+      "page": 1,
+      "page_size": 10
+    },
+    "assignmentDetail": {},
+    "userStatus": {}
+  },
+  "skillsprofile": {
+    "subject": {},
+    "segments": [],
+    "errors": [],
+    "skillsPalettes": [],
+    "subjectTypes": [],
+    "subjectDefault": {},
+    "segmentsTypes": [],
+    "segmentsDefault": [],
+    "segmentsCount": 0,
+    "subjectsList": [],
+    "skills": {
+      "aggregate": [],
+      "plain": [],
+      "all": []
+    },
+    "selectedNode": "aggregation-overall",
+    "selectedSubjectId": null,
+    "selectedSubjectType": null,
+    "segmentsList": [],
+    "selectedSegmentsId": [],
+    "selectedSegments": [],
+    "subjectScore": null,
+    "segmentsScores": [],
+    "segmentBy": null,
+    "skillsInfo": [],
+    "historyDuration": {
+      "years": 1,
+      "aggregation": "month"
+    },
+    "hours": [
+      {
+        "value": {
+          "days": 7,
+          "aggregation": "day"
+        },
+        "label": "last 7 days"
+      },
+      {
+        "value": {
+          "days": 29,
+          "aggregation": "day"
+        },
+        "label": "last 30 days"
+      },
+      {
+        "value": {
+          "days": 89,
+          "aggregation": "month"
+        },
+        "label": "last 90 days"
+      },
+      {
+        "value": {
+          "startOf": "year",
+          "endOf": "day",
+          "aggregation": "auto"
+        },
+        "label": "this year"
+      },
+      {
+        "value": {
+          "years": 1,
+          "aggregation": "month"
+        },
+        "label": "last year"
+      },
+      {
+        "value": {
+          "all": "all",
+          "endOf": "day"
+        },
+        "label": "all data"
+      },
+      {
+        "value": {
+          "custom": "custom",
+          "aggregation": "auto"
+        },
+        "label": "custom"
+      }
+    ],
+    "aggregationLevel": "day",
+    "leaderboard": {},
+    "selectedLeaderboard": "user",
+    "kgLevelsPercent": true
+  },
+  "dashboard": {
+    "content": [],
+    "description": "Last 30 days"
+  },
+  "ceresource": {},
+  "celist": {},
+  "cebuckets": {},
+  "modal": {},
+  "ceform": {},
+  "cepermissions": {
+    "resources": [],
+    "exams": [],
+    "labs": [],
+    "learning-paths": [],
+    "error": {}
+  },
+  "filestack": {},
+  "celabstepmodal": {
+    "open": null,
+    "isCreate": false,
+    "isSaveAsNewSubmit": false,
+    "isViewOnly": false
+  },
+  "celabstepsdnd": {
+    "selectedItem": -1,
+    "available": [],
+    "enabled": [],
+    "queryString": ""
+  },
+  "features": {
+    "list": [],
+    "detailId": null,
+    "detail": {},
+    "teams": []
+  },
+  "categorytree": {
+    "trees": []
+  },
+  "usertrainingplan": {
+    "userAssignments": [],
+    "activeAssignment": null,
+    "closedAssignments": [],
+    "leaderboard": []
+  },
+  "userdashboard": {
+    "dashboard": {
+      "tabs": [
+        "discover",
+        "activity"
+      ],
+      "hasOnboarding": false
+    },
+    "userConsumption": [],
+    "userCompleteContent": [],
+    "userCompleteContentCount": 0,
+    "userCompleteContentParams": {
+      "page": 1,
+      "size": 10
+    },
+    "userCompletedSessions": {},
+    "onboarding": [],
+    "error": {}
+  },
+  "curation": {
+    "curation": {}
+  },
+  "popover": {
+    "open": false,
+    "hover": false,
+    "popoverPosition": "",
+    "cardX": null,
+    "cardY": null,
+    "cardW": null,
+    "cardH": null,
+    "cardType": "",
+    "title": "",
+    "text": "",
+    "steps_counters": [],
+    "stepsCount": null,
+    "difficulty": "",
+    "entity": "",
+    "type": "",
+    "id": "",
+    "items": []
+  },
+  "report": {},
+  "profile": {
+    "leaderboard": {
+      "data": [],
+      "total": 1,
+      "page": 1,
+      "selectedTab": 0,
+      "highlightUsers": null
+    },
+    "skills": {
+      "plain": [],
+      "aggregate": [],
+      "all": []
+    },
+    "graph": {},
+    "nodes": [
+      {
+        "slug": "aggregation-overall",
+        "title": "Overall"
+      }
+    ],
+    "errors": []
+  },
+  "profileactivity": {
+    "graph": {},
+    "duration": {
+      "days": 89,
+      "aggregation": "month"
+    }
+  },
+  "skillheader": {
+    "private": false,
+    "consumption": {}
+  },
+  "authrouter": {
+    "error": false,
+    "userId": null
+  },
+  "library": {
+    "facets": {},
+    "items": [],
+    "trees": [],
+    "limit": 60,
+    "curation": {},
+    "emptyCuration": {},
+    "hits": 0,
+    "first": true,
+    "requestParams": null,
+    "isPrerender": false,
+    "is404": false,
+    "nodes": [],
+    "loadedCuration": false
+  },
+  "entity": {
+    "shouldBeEmpty": {},
+    "session": {}
+  },
+  "classroom": {
+    "entity": {},
+    "entityStep": {},
+    "error": false,
+    "errorStatus": null,
+    "genericError": false,
+    "notFound": false,
+    "session": {},
+    "unauthorized": false
+  },
+  "course": {
+    "entity": {
+      "permissions": {
+        "can_access": true,
+        "can_view": true,
+        "action_required": null
+      },
+      "progress": {
+        "last_session_id": null,
+        "progress_completeness": 0,
+        "progress_coverage": 0,
+        "progress_successful": 0
+      },
+      "order": 0,
+      "compound_id": {
+        "entity_id": "230",
+        "entity_type": "course"
+      },
+      "major_version_id": 148184,
+      "minor_version_id": 148184,
+      "external_id": "595fbc31cfd8cb5017a2f834",
+      "descriptive_type": "course",
+      "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002Fcorn\u002F59f35569a5be7f45fa3a6777.jpg",
+      "descriptive_type_label": "Course",
+      "duration": 2712,
+      "slug": "introduction-to-azure-container-service-acs",
+      "title": "Introduction to Azure Container Service (ACS)",
+      "difficulty": 1,
+      "difficulty_label": "Intermediate",
+      "group": null,
+      "is_free": false,
+      "is_public": false,
+      "is_paywall_protected": false,
+      "publish_date": "2017-07-14T09:18:21",
+      "short_description": null,
+      "status": "published",
+      "is_lp_only": false,
+      "visibility": null,
+      "custom_attributes": {},
+      "instructor": {
+        "id": 51,
+        "name": "Jeremy Likness",
+        "role": "Entrepreneur",
+        "image": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002Fcorn\u002F59f85fcaea92e648585c9f36.jpg",
+        "description": "\u003Cp\u003EJeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades. Jeremy is a prolific author with four published books and hundreds of articles focused on helping developers be their best. Jeremy speaks at conferences around the country and covers topics ranging from technologies like Docker, Node.js and .NET Core to processes and methodologies like Agile and DevOps. Jeremy lives near Atlanta with his wife of 19 years and teen-aged daughter. His hobbies including hiking, climbing mountains, shooting 9-ball, and regularly attending CrossFit classes while maintaining a vegan diet.\u003C\u002Fp\u003E",
+        "short_description": "Jeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades.",
+        "skills": [],
+        "blog_url": "http:\u002F\u002Fbit.ly\u002Fcoderblog",
+        "twitter_url": "https:\u002F\u002Ftwitter.com\u002Fjeremylikness",
+        "linkedin_url": "https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fjeremylikness\u002F",
+        "slug": "jeremy-likness",
+        "stats": {
+          "course_count": 1,
+          "laboratory_count": 0,
+          "learning_path_count": 0,
+          "course_student_count": 1450,
+          "laboratory_student_count": 0,
+          "learning_path_student_count": 0
+        }
+      },
+      "owner": null,
+      "steps_counters": [
+        {
+          "count": 12,
+          "descriptive_type": "lecture"
+        }
+      ],
+      "steps_count": 12,
+      "url": "\u002Fcourse\u002Fintroduction-to-azure-container-service-acs\u002F",
+      "knowledge_info": {
+        "objectives": [
+          {
+            "id": 8,
+            "owner_id": null,
+            "title": "Subdomain",
+            "slug": "subdomain",
+            "description": null,
+            "position": 6,
+            "values": [
+              {
+                "slug": "subdomain-containers",
+                "title": "Containers"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "owner_id": null,
+            "title": "Domain",
+            "slug": "domain",
+            "description": null,
+            "position": 2,
+            "values": [
+              {
+                "slug": "domain-compute",
+                "title": "Compute"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "owner_id": null,
+            "title": "Platform",
+            "slug": "platform",
+            "description": null,
+            "position": 1,
+            "values": [
+              {
+                "slug": "platform-microsoft-azure",
+                "title": "Microsoft Azure"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "owner_id": null,
+            "title": "Platform Domain",
+            "slug": "platform-domain",
+            "description": null,
+            "position": 3,
+            "values": [
+              {
+                "slug": "platform-domain-azure-compute",
+                "title": "Compute for Azure"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "owner_id": null,
+            "title": "Service",
+            "slug": "service",
+            "description": null,
+            "position": 7,
+            "values": [
+              {
+                "slug": "service-container-service",
+                "title": "Azure Container Service"
+              }
+            ]
+          }
+        ]
+      },
+      "last_major_version_date": "2018-02-05T13:27:06.398121",
+      "partner": null,
+      "description": "\u003Ch2\u003ECourse Description:\u003C\u002Fh2\u003E\r\n\u003Cp\u003EThe Azure Container Service (ACS) is a cloud-based container deployment and management service that supports popular open source tools and technologies for container and container orchestration. ACS allows you to run containers at scale in production and manages the underlying infrastructure for you by configuring the appropriate VMs and clusters for you. ACS is orchestrator-agnostic and allows you to use the container orchestration solution that best suits your needs. Learn how to use ACS to scale and orchestrate applications using DC\u002FOS, Docker Swarm, or Kubernetes.\u003C\u002Fp\u003E\r\n\u003Ch2\u003EIntended Audience:\u003C\u002Fh2\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EDevelopers\u003C\u002Fli\u003E\r\n\u003Cli\u003EOperation Engineers\u003C\u002Fli\u003E\r\n\u003Cli\u003EDevOps\u003C\u002Fli\u003E\r\n\u003Cli\u003EAnyone interested in managing containers at scale\u003C\u002Fli\u003E\r\n\u003C\u002Ful\u003E\r\n\u003Ch2\u003EPre-requisites:\u003C\u002Fh2\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EViewers should have a basic understanding of containers.\u003C\u002Fli\u003E\r\n\u003Cli\u003ESome familiarity with the Azure platform will also be helpful but is not required.\u003C\u002Fli\u003E\r\n\u003C\u002Ful\u003E\r\n\u003Ch2\u003ELearning Objectives:\u003C\u002Fh2\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EDemonstrate how to use ACS to create virtual machine hosts and clusters for container orchestration\u003C\u002Fli\u003E\r\n\u003Cli\u003EUnderstand&nbsp;how to choose an open source orchestration solution for ACS\u003C\u002Fli\u003E\r\n\u003Cli\u003EUnderstand how to run containers in production on Azure using ACS\u003C\u002Fli\u003E\r\n\u003Cli\u003EDemonstrate ability to scale and orchestrate containers with DC\u002FOS, Docker Swarm, and Kubernetes\u003C\u002Fli\u003E\r\n\u003C\u002Ful\u003E\r\n\u003Ch2\u003EThis Course Includes:\u003C\u002Fh2\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003E60 minutes of high-definition video\u003C\u002Fli\u003E\r\n\u003Cli\u003ELive demonstration on key course concepts\u003C\u002Fli\u003E\r\n\u003C\u002Ful\u003E\r\n\u003Ch2\u003EWhat You'll Learn:\u003C\u002Fh2\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EOverview of Azure Container Service: An overview of containers and the advantages of using them.\u003C\u002Fli\u003E\r\n\u003Cli\u003EOrchestrators: A summary of what orchestrators are and a description of the most popular orchestrators in use\u003C\u002Fli\u003E\r\n\u003Cli\u003EOpen Source Cloud-First Container Management at Scale: This lesson discusses the purpose of ACS, and how the service is activated.\u003C\u002Fli\u003E\r\n\u003Cli\u003EDeployment Scenarios: A brief explanation of different orchestrator scenarios.\u003C\u002Fli\u003E\r\n\u003Cli\u003EDeploy Kubernetes and Security: A live demo on how to deploy K8S.\u003C\u002Fli\u003E\r\n\u003Cli\u003EDeploy Kubernetes from the Portal: A live demo on how to create a security key and a K8S cluster.\u003C\u002Fli\u003E\r\n\u003Cli\u003EDeploy Kubernetes from the CLI: A live demo on the Command Line Interface.\u003C\u002Fli\u003E\r\n\u003Cli\u003EOrchestrator Overview &ndash; Kubernetes: A lesson on managing containers. First up..Kubernetes.\u003C\u002Fli\u003E\r\n\u003Cli\u003EOrchestrator Overview &ndash; DC\u002FOS: In this lesson we discuss deploying containers to the Data Center operating System.\u003C\u002Fli\u003E\r\n\u003Cli\u003EOrchestrator Overview &ndash; Swarm: In this&nbsp;last lesson we'll look at how ACS deploys Swarm.\u003C\u002Fli\u003E\r\n\u003Cli\u003ESummary and Conclusion: A wrap-up and summary of what we&rsquo;ve learned in this course.\u003C\u002Fli\u003E\r\n\u003C\u002Ful\u003E",
+      "steps": [
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 1,
+          "compound_id": {
+            "entity_id": "1753",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147008,
+          "minor_version_id": 147008,
+          "external_id": "595fbc31cfd8cb5017a2f828",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 104,
+          "slug": "introduction-to-azure-container-service",
+          "title": "Introduction to Azure Container Service",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 106,
+            "title": "Course Introduction"
+          },
+          "is_free": false,
+          "is_public": true,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 2,
+          "compound_id": {
+            "entity_id": "1754",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147009,
+          "minor_version_id": 147009,
+          "external_id": "595fbc31cfd8cb5017a2f829",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 151,
+          "slug": "overview-of-containers",
+          "title": "Overview of Containers",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 106,
+            "title": "Course Introduction"
+          },
+          "is_free": false,
+          "is_public": true,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 3,
+          "compound_id": {
+            "entity_id": "1755",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147011,
+          "minor_version_id": 147011,
+          "external_id": "595fbc31cfd8cb5017a2f82a",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 146,
+          "slug": "orchestrators",
+          "title": "Orchestrators",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 419,
+            "title": "Azure Container Service"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 4,
+          "compound_id": {
+            "entity_id": "1756",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147013,
+          "minor_version_id": 147013,
+          "external_id": "595fbc31cfd8cb5017a2f82b",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 143,
+          "slug": "open-source-cloud-first-container-management",
+          "title": "Open Source Cloud-First Container Management ",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 419,
+            "title": "Azure Container Service"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 5,
+          "compound_id": {
+            "entity_id": "1757",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147015,
+          "minor_version_id": 147015,
+          "external_id": "595fbc31cfd8cb5017a2f82c",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 64,
+          "slug": "introduction-to-deployment-scenarios",
+          "title": "Introduction to Deployment Scenarios",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 420,
+            "title": "Deployment Scenarios"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 6,
+          "compound_id": {
+            "entity_id": "1758",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147017,
+          "minor_version_id": 147017,
+          "external_id": "595fbc31cfd8cb5017a2f82d",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 257,
+          "slug": "deploy-kubernetes-and-security",
+          "title": "Deploy Kubernetes and Security",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 420,
+            "title": "Deployment Scenarios"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 7,
+          "compound_id": {
+            "entity_id": "1759",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147019,
+          "minor_version_id": 147019,
+          "external_id": "595fbc31cfd8cb5017a2f82e",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 251,
+          "slug": "deploy-kubernetes-from-the-portal",
+          "title": "Deploy Kubernetes from the Portal",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 420,
+            "title": "Deployment Scenarios"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 8,
+          "compound_id": {
+            "entity_id": "1760",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147021,
+          "minor_version_id": 147021,
+          "external_id": "595fbc31cfd8cb5017a2f82f",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 216,
+          "slug": "deploy-kubernetes-from-cli",
+          "title": "Deploy Kubernetes from CLI",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 420,
+            "title": "Deployment Scenarios"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 9,
+          "compound_id": {
+            "entity_id": "1761",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147023,
+          "minor_version_id": 147023,
+          "external_id": "595fbc31cfd8cb5017a2f830",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 225,
+          "slug": "orchestrators-kubernetes",
+          "title": "Orchestrators - Kubernetes",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 421,
+            "title": "Orchestrators"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 10,
+          "compound_id": {
+            "entity_id": "1762",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147025,
+          "minor_version_id": 147025,
+          "external_id": "595fbc31cfd8cb5017a2f831",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 567,
+          "slug": "orchestrators-dc-os",
+          "title": "Orchestrators - DC\u002FOS",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 421,
+            "title": "Orchestrators"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 11,
+          "compound_id": {
+            "entity_id": "1763",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147027,
+          "minor_version_id": 147027,
+          "external_id": "595fbc31cfd8cb5017a2f832",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 425,
+          "slug": "orchestrators-docker-swarm",
+          "title": "Orchestrators - Docker Swarm",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 421,
+            "title": "Orchestrators"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        },
+        {
+          "permissions": {
+            "can_access": true,
+            "can_view": true,
+            "action_required": null
+          },
+          "progress": {
+            "last_session_id": null,
+            "progress_completeness": 0,
+            "progress_coverage": 0,
+            "progress_successful": 0
+          },
+          "order": 12,
+          "compound_id": {
+            "entity_id": "1764",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147029,
+          "minor_version_id": 147029,
+          "external_id": "595fbc31cfd8cb5017a2f833",
+          "descriptive_type": "lecture",
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 163,
+          "slug": "summary-and-conclusion",
+          "title": "Summary and Conclusion",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {
+            "id": 327,
+            "title": "Course Conclusion"
+          },
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "step_id": null
+        }
+      ],
+      "player": null,
+      "seo": {
+        "title": null,
+        "description": "Learn about the Azure Container Service (ACS) and understand how to run containers at scale and manage the underlying infrastructure. ",
+        "canonical_url": null,
+        "no_index": false,
+        "no_follow": false,
+        "keywords": "Azure Container Service",
+        "image": null
+      },
+      "category_tree_nodes": [
+        [
+          {
+            "id": 18,
+            "name": "Courses",
+            "title": "Microsoft Azure Courses",
+            "slug": "courses",
+            "image": null,
+            "color": "#FFFFFF"
+          },
+          {
+            "id": 16,
+            "name": "Microsoft Azure",
+            "title": "Microsoft Azure Training Library",
+            "slug": "azure",
+            "image": null,
+            "color": "#FFFFFF"
+          },
+          {
+            "id": 25,
+            "name": "Categories",
+            "title": "Training Library",
+            "slug": "categories",
+            "image": null,
+            "color": "#FFFFFF"
+          }
+        ],
+        [
+          {
+            "id": 51,
+            "name": "Courses",
+            "title": "Containers Courses",
+            "slug": "courses",
+            "image": null,
+            "color": null
+          },
+          {
+            "id": 34,
+            "name": "Containers",
+            "title": "Containers Training Library",
+            "slug": "containers",
+            "image": null,
+            "color": null
+          },
+          {
+            "id": 25,
+            "name": "Categories",
+            "title": "Training Library",
+            "slug": "categories",
+            "image": null,
+            "color": "#FFFFFF"
+          }
+        ]
+      ],
+      "statistics": {
+        "students_count": 1422,
+        "positive_feedback_count": 136,
+        "negative_feedback_count": 10,
+        "average_feedback_score": 4.72972972972973,
+        "content_reports_count": 7,
+        "bookmarks_count": 62
+      },
+      "features": [],
+      "cpe": {
+        "user_value": null,
+        "content_value": null,
+        "is_active": false
+      }
+    },
+    "entityStep": {
+      "compound_id": {
+        "entity_id": "1757",
+        "entity_type": "lecture"
+      },
+      "major_version_id": 147015,
+      "minor_version_id": 147015,
+      "external_id": "595fbc31cfd8cb5017a2f82c",
+      "descriptive_type": "lecture",
+      "steps_counters": [],
+      "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+      "descriptive_type_label": "Lecture",
+      "duration": 64,
+      "order": 0,
+      "slug": "introduction-to-deployment-scenarios",
+      "title": "Introduction to Deployment Scenarios",
+      "difficulty": 0,
+      "difficulty_label": "Beginner",
+      "group": {},
+      "is_free": false,
+      "is_public": false,
+      "is_paywall_protected": false,
+      "publish_date": "2017-07-14T09:18:21",
+      "short_description": "",
+      "status": "published",
+      "is_lp_only": false,
+      "visibility": null,
+      "custom_attributes": {},
+      "instructor": {
+        "id": 51,
+        "name": "Jeremy Likness",
+        "role": "Entrepreneur",
+        "image": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002Fcorn\u002F59f85fcaea92e648585c9f36.jpg",
+        "description": "\u003Cp\u003EJeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades. Jeremy is a prolific author with four published books and hundreds of articles focused on helping developers be their best. Jeremy speaks at conferences around the country and covers topics ranging from technologies like Docker, Node.js and .NET Core to processes and methodologies like Agile and DevOps. Jeremy lives near Atlanta with his wife of 19 years and teen-aged daughter. His hobbies including hiking, climbing mountains, shooting 9-ball, and regularly attending CrossFit classes while maintaining a vegan diet.\u003C\u002Fp\u003E",
+        "short_description": "Jeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades.",
+        "skills": [],
+        "blog_url": "http:\u002F\u002Fbit.ly\u002Fcoderblog",
+        "twitter_url": "https:\u002F\u002Ftwitter.com\u002Fjeremylikness",
+        "linkedin_url": "https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fjeremylikness\u002F",
+        "slug": "jeremy-likness",
+        "stats": {
+          "course_count": 1,
+          "laboratory_count": 0,
+          "learning_path_count": 0,
+          "course_student_count": 1450,
+          "laboratory_student_count": 0,
+          "learning_path_student_count": 0
+        }
+      },
+      "owner": null,
+      "steps": [],
+      "steps_count": 0,
+      "url": null,
+      "knowledge_info": {
+        "objectives": []
+      },
+      "last_major_version_date": "2018-01-03T13:54:47.829092",
+      "partner": null,
+      "description": null,
+      "player": {
+        "prerolls": [
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1920_1080.mp4?token=Jpqd-uZZ5UeNNCPhw8I41A&expires=1578905391",
+            "quality": "1080p",
+            "type": "video\u002Fmp4"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1280_720.mp4?token=rhRZ4Xf-S-f3NqhIOz7gng&expires=1578905391",
+            "quality": "720p",
+            "type": "video\u002Fmp4"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_640_360.mp4?token=hkyvWAdhfqwQmYzc9Uw19Q&expires=1578905391",
+            "quality": "360p",
+            "type": "video\u002Fmp4"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1920_1080.webm?token=cDSWBK8VFXXwFAtCuvV2Aw&expires=1578905391",
+            "quality": "1080p",
+            "type": "video\u002Fwebm"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1280_720.webm?token=zItfX_Oj8Xx5tOuZ2vJvrg&expires=1578905391",
+            "quality": "720p",
+            "type": "video\u002Fwebm"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_640_360.webm?token=RaMydMy2mvzsc4Veh2EimQ&expires=1578905391",
+            "quality": "360p",
+            "type": "video\u002Fwebm"
+          }
+        ],
+        "transcript": "\u003Cp\u003EBefore we create our first cluster, I wanna talk a little bit about deployment scenarios because each orchestrator creates a sightly different architecture. If we look at Kubernetes, the concept here is a private master that manages the various containers and hosts, and then a public set that consists of nodes. These nodes can have proxies to enable load balancing, but ultimately, they run Docker on the backend.\u003C\u002Fp\u003E\r\n\u003Cp\u003EThe Datacenter Operating System, by default, creates three sets. There's a private set intended for internal services, a public set that's exposed and is accessible through public endpoints, and a master set that controls everything. Finally, Docker in Swarm mode is designed to create a master set that controls agents which are essentially Docker hosts that run the Docker containers.\u003C\u002Fp\u003E",
+        "type": "video",
+        "subtitles": [
+          {
+            "lang": "en",
+            "url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002F595e9421cfd8cb501da36dc2\u002Fsubs\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fsub_en.vtt",
+            "lang_display_name": "English"
+          }
+        ],
+        "sources": [
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_640_360.mp4?token=hywIDwSru648JOyaSMxfsA&expires=1578905391",
+            "quality": "360p",
+            "type": "video\u002Fmp4"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_640_360.webm?token=c2VsCODITDAuDTkzGtjBKQ&expires=1578905391",
+            "quality": "360p",
+            "type": "video\u002Fwebm"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1280_720.webm?token=t_cwW6mNOPxw9c0Dei7qmQ&expires=1578905391",
+            "quality": "720p",
+            "type": "video\u002Fwebm"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1920_1080.webm?token=-fydEtvxcVfex71vfpWU0g&expires=1578905391",
+            "quality": "1080p",
+            "type": "video\u002Fwebm"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1920_1080.mp4?token=1pXTvwzq0TGIdEc6q-D9NA&expires=1578905391",
+            "quality": "1080p",
+            "type": "video\u002Fmp4"
+          },
+          {
+            "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1280_720.mp4?token=vSTOD53rU_EuoiWmLKcr_w&expires=1578905391",
+            "quality": "720p",
+            "type": "video\u002Fmp4"
+          }
+        ]
+      },
+      "seo": {
+        "title": null,
+        "description": null,
+        "canonical_url": null,
+        "no_index": false,
+        "no_follow": false,
+        "keywords": null,
+        "image": null
+      },
+      "category_tree_nodes": null,
+      "statistics": {
+        "students_count": 1174,
+        "positive_feedback_count": 0,
+        "negative_feedback_count": 0,
+        "average_feedback_score": null,
+        "content_reports_count": 0,
+        "bookmarks_count": 0
+      },
+      "features": []
+    },
+    "session": null,
+    "includedIn": [
+      {
+        "permissions": {
+          "can_access": true,
+          "can_view": true,
+          "action_required": null
+        },
+        "progress": {
+          "last_session_id": null,
+          "progress_completeness": 0,
+          "progress_coverage": 0,
+          "progress_successful": 0
+        },
+        "order": 0,
+        "compound_id": {
+          "entity_id": "389",
+          "entity_type": "lp"
+        },
+        "major_version_id": 191926,
+        "minor_version_id": 191926,
+        "external_id": "5c532ab4171a3602d521df8c",
+        "descriptive_type": "lp",
+        "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002Fentities\u002Fca4244f6-107.jpg",
+        "descriptive_type_label": "Learning Path",
+        "duration": 163354,
+        "slug": "az-300-exam-preparation-technologies-for-microsoft-azure-architects",
+        "title": "AZ-300 Exam Preparation: Technologies for Microsoft Azure Architects",
+        "steps": [
+          {
+            "order": 1,
+            "compound_id": {
+              "entity_id": "426",
+              "entity_type": "course"
+            },
+            "major_version_id": 165088,
+            "minor_version_id": 165468,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 2,
+            "compound_id": {
+              "entity_id": "190",
+              "entity_type": "course"
+            },
+            "major_version_id": 146344,
+            "minor_version_id": 193222,
+            "external_id": "5901b126ea92e675c49d446e",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 3,
+            "compound_id": {
+              "entity_id": "74",
+              "entity_type": "lab"
+            },
+            "major_version_id": 183376,
+            "minor_version_id": 193021,
+            "external_id": "lab-74",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 4,
+            "compound_id": {
+              "entity_id": "35369",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb79453679b5e2b5e44f686",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 5,
+            "compound_id": {
+              "entity_id": "67",
+              "entity_type": "course"
+            },
+            "major_version_id": 144489,
+            "minor_version_id": 192605,
+            "external_id": "56661df7668ad13347fd7615",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 6,
+            "compound_id": {
+              "entity_id": "35367",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb74fa397e01e13f3780ac6",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 7,
+            "compound_id": {
+              "entity_id": "377",
+              "entity_type": "lab"
+            },
+            "major_version_id": 183754,
+            "minor_version_id": 184634,
+            "external_id": "lab-377",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 8,
+            "compound_id": {
+              "entity_id": "200",
+              "entity_type": "course"
+            },
+            "major_version_id": 146499,
+            "minor_version_id": 192356,
+            "external_id": "5919a1d2cfd8cb4b1c291dd1",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 9,
+            "compound_id": {
+              "entity_id": "35368",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb775a41c32b822c84441a1",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 10,
+            "compound_id": {
+              "entity_id": "105",
+              "entity_type": "lab"
+            },
+            "major_version_id": 51238,
+            "minor_version_id": 181013,
+            "external_id": "lab-105",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 11,
+            "compound_id": {
+              "entity_id": "174",
+              "entity_type": "course"
+            },
+            "major_version_id": 145939,
+            "minor_version_id": 192350,
+            "external_id": "58b5c63eea92e67d204b0b88",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 12,
+            "compound_id": {
+              "entity_id": "188",
+              "entity_type": "lab"
+            },
+            "major_version_id": 157830,
+            "minor_version_id": 180211,
+            "external_id": "lab-188",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 13,
+            "compound_id": {
+              "entity_id": "35370",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb899938a7878007a6f87a1",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 14,
+            "compound_id": {
+              "entity_id": "348",
+              "entity_type": "course"
+            },
+            "major_version_id": 153558,
+            "minor_version_id": 193327,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 15,
+            "compound_id": {
+              "entity_id": "35167",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5b3ba6fb2474137e72e5fb6f",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 16,
+            "compound_id": {
+              "entity_id": "397",
+              "entity_type": "course"
+            },
+            "major_version_id": 160803,
+            "minor_version_id": 160803,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 17,
+            "compound_id": {
+              "entity_id": "187",
+              "entity_type": "lab"
+            },
+            "major_version_id": 180722,
+            "minor_version_id": 186578,
+            "external_id": "lab-187",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 18,
+            "compound_id": {
+              "entity_id": "423",
+              "entity_type": "course"
+            },
+            "major_version_id": 164302,
+            "minor_version_id": 164302,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 19,
+            "compound_id": {
+              "entity_id": "443",
+              "entity_type": "course"
+            },
+            "major_version_id": 168003,
+            "minor_version_id": 193339,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 20,
+            "compound_id": {
+              "entity_id": "126",
+              "entity_type": "lab"
+            },
+            "major_version_id": 140984,
+            "minor_version_id": 191259,
+            "external_id": "lab-126",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 21,
+            "compound_id": {
+              "entity_id": "419",
+              "entity_type": "course"
+            },
+            "major_version_id": 164013,
+            "minor_version_id": 175730,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 22,
+            "compound_id": {
+              "entity_id": "244",
+              "entity_type": "course"
+            },
+            "major_version_id": 147187,
+            "minor_version_id": 193330,
+            "external_id": "59a104bba5be7f2a2ca4eed8",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 23,
+            "compound_id": {
+              "entity_id": "35365",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb660511c32b8111d443cf5",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 24,
+            "compound_id": {
+              "entity_id": "444",
+              "entity_type": "course"
+            },
+            "major_version_id": 169101,
+            "minor_version_id": 193333,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 25,
+            "compound_id": {
+              "entity_id": "442",
+              "entity_type": "course"
+            },
+            "major_version_id": 166898,
+            "minor_version_id": 193336,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 26,
+            "compound_id": {
+              "entity_id": "125",
+              "entity_type": "lab"
+            },
+            "major_version_id": 141185,
+            "minor_version_id": 190319,
+            "external_id": "lab-125",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 27,
+            "compound_id": {
+              "entity_id": "378",
+              "entity_type": "course"
+            },
+            "major_version_id": 157501,
+            "minor_version_id": 157501,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 28,
+            "compound_id": {
+              "entity_id": "395",
+              "entity_type": "course"
+            },
+            "major_version_id": 159801,
+            "minor_version_id": 159801,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 29,
+            "compound_id": {
+              "entity_id": "347",
+              "entity_type": "course"
+            },
+            "major_version_id": 153350,
+            "minor_version_id": 192822,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 30,
+            "compound_id": {
+              "entity_id": "35165",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5b3afc17efa35735da14d363",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 31,
+            "compound_id": {
+              "entity_id": "434",
+              "entity_type": "course"
+            },
+            "major_version_id": 166651,
+            "minor_version_id": 168502,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 32,
+            "compound_id": {
+              "entity_id": "183",
+              "entity_type": "course"
+            },
+            "major_version_id": 146115,
+            "minor_version_id": 192590,
+            "external_id": "58eff703cfd8cb630bd18fb4",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 33,
+            "compound_id": {
+              "entity_id": "163",
+              "entity_type": "lab"
+            },
+            "major_version_id": 183944,
+            "minor_version_id": 184945,
+            "external_id": "lab-163",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 34,
+            "compound_id": {
+              "entity_id": "35371",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5cb8f9d1045858007b5fd2b4",
+            "descriptive_type": "exam"
+          },
+          {
+            "order": 35,
+            "compound_id": {
+              "entity_id": "230",
+              "entity_type": "course"
+            },
+            "major_version_id": 148184,
+            "minor_version_id": 148184,
+            "external_id": "595fbc31cfd8cb5017a2f834",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 36,
+            "compound_id": {
+              "entity_id": "351",
+              "entity_type": "course"
+            },
+            "major_version_id": 153665,
+            "minor_version_id": 192809,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 37,
+            "compound_id": {
+              "entity_id": "432",
+              "entity_type": "course"
+            },
+            "major_version_id": 165643,
+            "minor_version_id": 166631,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 38,
+            "compound_id": {
+              "entity_id": "212",
+              "entity_type": "course"
+            },
+            "major_version_id": 146753,
+            "minor_version_id": 192599,
+            "external_id": "5931c2b4a5be7f0bd76a23bf",
+            "descriptive_type": "course"
+          },
+          {
+            "order": 39,
+            "compound_id": {
+              "entity_id": "394",
+              "entity_type": "course"
+            },
+            "major_version_id": 186202,
+            "minor_version_id": 192320,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 40,
+            "compound_id": {
+              "entity_id": "406",
+              "entity_type": "lab"
+            },
+            "major_version_id": 187547,
+            "minor_version_id": 187548,
+            "external_id": "lab-406",
+            "descriptive_type": "lab"
+          },
+          {
+            "order": 41,
+            "compound_id": {
+              "entity_id": "427",
+              "entity_type": "course"
+            },
+            "major_version_id": 165093,
+            "minor_version_id": 165093,
+            "external_id": null,
+            "descriptive_type": "course"
+          },
+          {
+            "order": 42,
+            "compound_id": {
+              "entity_id": "273",
+              "entity_type": "lab"
+            },
+            "major_version_id": 171946,
+            "minor_version_id": 186364,
+            "external_id": "lab-273",
+            "descriptive_type": "labchallenge"
+          },
+          {
+            "order": 43,
+            "compound_id": {
+              "entity_id": "439",
+              "entity_type": "lab"
+            },
+            "major_version_id": 191925,
+            "minor_version_id": 191973,
+            "external_id": "lab-439",
+            "descriptive_type": "labchallenge"
+          },
+          {
+            "order": 44,
+            "compound_id": {
+              "entity_id": "35317",
+              "entity_type": "exam"
+            },
+            "major_version_id": null,
+            "minor_version_id": null,
+            "external_id": "5c3d58a3f509a506ffaeafca",
+            "descriptive_type": "exam"
+          }
+        ]
+      }
+    ],
+    "currentFeedback": null,
+    "currentStepFeedback": null,
+    "currentBookmark": false,
+    "isEnterprise": false,
+    "player": {},
+    "error": false,
+    "notFound": false,
+    "unauthorized": false,
+    "genericError": false,
+    "errorStatus": null,
+    "sessionError": null,
+    "entitySidebar": {
+      "isTiny": false
+    },
+    "prerollSettings": {},
+    "requestParams": {
+      "params": {
+        "type": "course",
+        "entity": "introduction-to-azure-container-service-acs",
+        "entityStep": "introduction-to-deployment-scenarios"
+      },
+      "qs": {}
+    },
+    "stepMap": {
+      "1757": {
+        "data": {
+          "compound_id": {
+            "entity_id": "1757",
+            "entity_type": "lecture"
+          },
+          "major_version_id": 147015,
+          "minor_version_id": 147015,
+          "external_id": "595fbc31cfd8cb5017a2f82c",
+          "descriptive_type": "lecture",
+          "steps_counters": [],
+          "cover_url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fstatic_res\u002Fimages\u002Fcontent-cover\u002Flecture-default-cover.jpg",
+          "descriptive_type_label": "Lecture",
+          "duration": 64,
+          "order": 0,
+          "slug": "introduction-to-deployment-scenarios",
+          "title": "Introduction to Deployment Scenarios",
+          "difficulty": 0,
+          "difficulty_label": "Beginner",
+          "group": {},
+          "is_free": false,
+          "is_public": false,
+          "is_paywall_protected": false,
+          "publish_date": "2017-07-14T09:18:21",
+          "short_description": "",
+          "status": "published",
+          "is_lp_only": false,
+          "visibility": null,
+          "custom_attributes": {},
+          "instructor": {
+            "id": 51,
+            "name": "Jeremy Likness",
+            "role": "Entrepreneur",
+            "image": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002Fcorn\u002F59f85fcaea92e648585c9f36.jpg",
+            "description": "\u003Cp\u003EJeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades. Jeremy is a prolific author with four published books and hundreds of articles focused on helping developers be their best. Jeremy speaks at conferences around the country and covers topics ranging from technologies like Docker, Node.js and .NET Core to processes and methodologies like Agile and DevOps. Jeremy lives near Atlanta with his wife of 19 years and teen-aged daughter. His hobbies including hiking, climbing mountains, shooting 9-ball, and regularly attending CrossFit classes while maintaining a vegan diet.\u003C\u002Fp\u003E",
+            "short_description": "Jeremy Likness is an experienced entrepreneur who has worked with companies to catalyze growth and leverage leading edge development technology to streamline business processes and support innovation for two decades.",
+            "skills": [],
+            "blog_url": "http:\u002F\u002Fbit.ly\u002Fcoderblog",
+            "twitter_url": "https:\u002F\u002Ftwitter.com\u002Fjeremylikness",
+            "linkedin_url": "https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fjeremylikness\u002F",
+            "slug": "jeremy-likness",
+            "stats": {
+              "course_count": 1,
+              "laboratory_count": 0,
+              "learning_path_count": 0,
+              "course_student_count": 1450,
+              "laboratory_student_count": 0,
+              "learning_path_student_count": 0
+            }
+          },
+          "owner": null,
+          "steps": [],
+          "steps_count": 0,
+          "url": null,
+          "knowledge_info": {
+            "objectives": []
+          },
+          "last_major_version_date": "2018-01-03T13:54:47.829092",
+          "partner": null,
+          "description": null,
+          "player": {
+            "prerolls": [
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1920_1080.mp4?token=Jpqd-uZZ5UeNNCPhw8I41A&expires=1578905391",
+                "quality": "1080p",
+                "type": "video\u002Fmp4"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1280_720.mp4?token=rhRZ4Xf-S-f3NqhIOz7gng&expires=1578905391",
+                "quality": "720p",
+                "type": "video\u002Fmp4"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_640_360.mp4?token=hkyvWAdhfqwQmYzc9Uw19Q&expires=1578905391",
+                "quality": "360p",
+                "type": "video\u002Fmp4"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1920_1080.webm?token=cDSWBK8VFXXwFAtCuvV2Aw&expires=1578905391",
+                "quality": "1080p",
+                "type": "video\u002Fwebm"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_1280_720.webm?token=zItfX_Oj8Xx5tOuZ2vJvrg&expires=1578905391",
+                "quality": "720p",
+                "type": "video\u002Fwebm"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo.cloudacademy.com\u002F2673_preroll_code_mesh\u002Fvideo_a050a499fea03022d1c2036fcd654c98-2_640_360.webm?token=RaMydMy2mvzsc4Veh2EimQ&expires=1578905391",
+                "quality": "360p",
+                "type": "video\u002Fwebm"
+              }
+            ],
+            "transcript": "\u003Cp\u003EBefore we create our first cluster, I wanna talk a little bit about deployment scenarios because each orchestrator creates a sightly different architecture. If we look at Kubernetes, the concept here is a private master that manages the various containers and hosts, and then a public set that consists of nodes. These nodes can have proxies to enable load balancing, but ultimately, they run Docker on the backend.\u003C\u002Fp\u003E\r\n\u003Cp\u003EThe Datacenter Operating System, by default, creates three sets. There's a private set intended for internal services, a public set that's exposed and is accessible through public endpoints, and a master set that controls everything. Finally, Docker in Swarm mode is designed to create a master set that controls agents which are essentially Docker hosts that run the Docker containers.\u003C\u002Fp\u003E",
+            "type": "video",
+            "subtitles": [
+              {
+                "lang": "en",
+                "url": "https:\u002F\u002Fassets.cloudacademy.com\u002Fbakery\u002Fmedia\u002Fuploads\u002F595e9421cfd8cb501da36dc2\u002Fsubs\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fsub_en.vtt",
+                "lang_display_name": "English"
+              }
+            ],
+            "sources": [
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_640_360.mp4?token=hywIDwSru648JOyaSMxfsA&expires=1578905391",
+                "quality": "360p",
+                "type": "video\u002Fmp4"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_640_360.webm?token=c2VsCODITDAuDTkzGtjBKQ&expires=1578905391",
+                "quality": "360p",
+                "type": "video\u002Fwebm"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1280_720.webm?token=t_cwW6mNOPxw9c0Dei7qmQ&expires=1578905391",
+                "quality": "720p",
+                "type": "video\u002Fwebm"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1920_1080.webm?token=-fydEtvxcVfex71vfpWU0g&expires=1578905391",
+                "quality": "1080p",
+                "type": "video\u002Fwebm"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1920_1080.mp4?token=1pXTvwzq0TGIdEc6q-D9NA&expires=1578905391",
+                "quality": "1080p",
+                "type": "video\u002Fmp4"
+              },
+              {
+                "src": "https:\u002F\u002Fvideo-legacy.cloudacademy.com\u002F595e9421cfd8cb501da36dc2\u002Fsources\u002FLikness%20-%20Intro%20ACS%20-%2005%20-%20Deployment%20Scenarios\u002Fvideo_1280_720.mp4?token=vSTOD53rU_EuoiWmLKcr_w&expires=1578905391",
+                "quality": "720p",
+                "type": "video\u002Fmp4"
+              }
+            ]
+          },
+          "seo": {
+            "title": null,
+            "description": null,
+            "canonical_url": null,
+            "no_index": false,
+            "no_follow": false,
+            "keywords": null,
+            "image": null
+          },
+          "category_tree_nodes": null,
+          "statistics": {
+            "students_count": 1174,
+            "positive_feedback_count": 0,
+            "negative_feedback_count": 0,
+            "average_feedback_score": null,
+            "content_reports_count": 0,
+            "bookmarks_count": 0
+          },
+          "features": []
+        },
+        "expiration": "1578905391"
+      }
+    }
+  },
+  "lab": {
+    "entity": {},
+    "entityStep": {},
+    "session": {},
+    "currentFeedback": null,
+    "currentStepFeedback": null,
+    "currentBookmark": false,
+    "isEnterprise": false,
+    "isFirstResume": false,
+    "player": {},
+    "error": false,
+    "notFound": false,
+    "unauthorized": false,
+    "genericError": false,
+    "errorStatus": null,
+    "sessionError": null,
+    "entitySidebar": {
+      "isTiny": false
+    },
+    "prerollSettings": {},
+    "changelog": [],
+    "labReport": {},
+    "_countdown": {},
+    "otherSessions": {},
+    "bans": [],
+    "stepMap": {}
+  },
+  "skills": {
+    "skills": {},
+    "leaderboard": [],
+    "improvements": [],
+    "progress": {}
+  },
+  "resource": {
+    "entity": {},
+    "entityStep": {},
+    "session": {},
+    "player": {},
+    "error": false,
+    "notFound": false,
+    "unauthorized": false,
+    "genericError": false,
+    "errorStatus": null,
+    "sessionError": null,
+    "prerollSettings": {}
+  }
+}
