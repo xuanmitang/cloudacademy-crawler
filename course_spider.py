@@ -1,9 +1,7 @@
-import scrapy
-import json
-import requests
-import os
+import scrapy, json, requests, os, logging
 from http.cookiejar import MozillaCookieJar
-import logging
+from scrapy.crawler import CrawlerProcess,Crawler
+import sys, getopt
 
 
 class courseSpider(scrapy.Spider):
@@ -96,3 +94,28 @@ class courseSpider(scrapy.Spider):
         endIndex = str.index(endStr) + 1
 
         return str[beginIndex:endIndex]
+
+def main(argv):
+    course_name=''
+    cookies=''
+    outdir=''
+    for arg in argv:
+        param = arg.split("=")
+        id=param[0]
+        value=param[1]
+        if id == '-course_name':
+            course_name = value
+        elif id == '-cookies':
+            cookies = value
+        elif id == '-outdir':
+            outdir = value
+
+    process = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+    })
+
+    process.crawl(courseSpider, course_name=course_name, cookies=cookies, outdir=outdir)
+    process.start()
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

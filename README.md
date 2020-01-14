@@ -1,7 +1,7 @@
 （目前只支持下载代码，本地运行）
 #install
 ```
-pip install scrapy
+pip3 install scrapy
 ```
 
 #download cookies.txt file
@@ -16,5 +16,5 @@ pip install scrapy
 #run
 ```
 in terminal run command:
-scrapy runspider course_spider.py -a course_name=introduction-to-azure-container-service-acs -a cookies=cookies.txt -a outdir=output
+python3 course_spider.py -course_name=hashicorp-vault -cookies=/Downloads/cookies.txt -outdir=/Downloads/output
 ```
