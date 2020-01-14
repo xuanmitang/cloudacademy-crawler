@@ -6,15 +6,23 @@ from http.cookiejar import MozillaCookieJar
 import logging
 
 
-class videoSpider(scrapy.Spider):
-    name = 'blogspider'
-    cj = MozillaCookieJar()
-    cj.load("cookies.txt")
+class courseSpider(scrapy.Spider):
+    name = 'courseSpider'
 
-    cookies = {}
-    for cookie in cj:
-        cookies[cookie.name] = cookie.value
-    course_url = "https://cloudacademy.com/course/introduction-to-azure-container-service-acs/introduction-to-azure-container-service/"
+    def __init__(self, course_name=None, cookies=None, outdir=None, *args, **kwargs):
+        super(courseSpider, self).__init__(*args, **kwargs)
+        self.course_url = 'https://cloudacademy.com/course/%s' % course_name
+        self.cookies = self.load_cookies(cookies)
+        self.outdir = outdir
+
+    def load_cookies(self, cookies_dir):
+        cj = MozillaCookieJar()
+        cj.load(cookies_dir)
+
+        cookies = {}
+        for cookie in cj:
+            cookies[cookie.name] = cookie.value
+        return cookies
 
     def start_requests(self):
         return [scrapy.Request(url=self.course_url,
@@ -47,7 +55,8 @@ class videoSpider(scrapy.Spider):
     def get_video_url(self, response):
         video_sources_text = self.parse_response_text(response.text, '"sources"')
         video_sources = json.loads(video_sources_text)
-        video_source_with_720p = list(filter(lambda source: source['quality'] == '720p' and source['type'] == 'video/mp4', video_sources))
+        video_source_with_720p = list(
+            filter(lambda source: source['quality'] == '720p' and source['type'] == 'video/mp4', video_sources))
         video_url = video_source_with_720p[0]['src']
         logging.info("success parse video url... " + video_url)
         return video_url
@@ -60,7 +69,6 @@ class videoSpider(scrapy.Spider):
         logging.info("success parse subtitle url... " + subtitle_url)
         return subtitle_url
 
-
     def parse_response_text(self, html_text, key_word):
         res = html_text
         begin1 = res.index(key_word + ':[')
@@ -69,7 +77,7 @@ class videoSpider(scrapy.Spider):
 
     def get_lesson_name(self, request_url):
         uri_arr = request_url.split('/')
-        folder_name = "output/" + uri_arr[-3]
+        folder_name = self.outdir + "/" + uri_arr[-3]
         if not os.path.exists(folder_name):
             os.makedirs(folder_name)
         return folder_name + '/' + uri_arr[-2]
@@ -82,7 +90,6 @@ class videoSpider(scrapy.Spider):
                 if chunk:
                     f.write(chunk)
         logging.info("success download... " + url)
-
 
     def split(self, str, beginStr, endStr):
         beginIndex = str.index(beginStr)
