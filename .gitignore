@@ -2,3 +2,6 @@
 output
 cookies*.txt
 __pycache__
+dist
+build
+cloudacademy_crawler*

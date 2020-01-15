@@ -1,8 +1,6 @@
-（目前只支持下载代码，本地运行）
-
 #1.install
 ```
-pip3 install scrapy
+pip3 install cloudacademy-crawler
 ```
 
 #2.download cookies.txt file
@@ -15,5 +13,5 @@ pip3 install scrapy
 
 #3.run command in terminal
 ```
-python3 course_spider.py -course_name=hashicorp-vault -cookies=/Downloads/cookies.txt -outdir=/Downloads/output
+ca_spider -course_name=managing-findings-from-multiple-accounts-using-amazon-guardduty -cookies=/<cookie_dir>/cookies.txt -outdir=output
 ```

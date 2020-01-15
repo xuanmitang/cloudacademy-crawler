@@ -44,8 +44,6 @@ class courseSpider(scrapy.Spider):
                                  callback=self.parse_video,
                                  dont_filter=True)
 
-
-
     def parse_video(self, response):
         lesson_name = self.get_lesson_name(response.request.url)
 
