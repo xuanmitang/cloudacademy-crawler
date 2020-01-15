@@ -1,4 +1,4 @@
 .idea
 output
-cookies.txt
+cookies*.txt
 __pycache__

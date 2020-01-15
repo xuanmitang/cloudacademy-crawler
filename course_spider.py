@@ -1,7 +1,7 @@
 import scrapy, json, requests, os, logging
 from http.cookiejar import MozillaCookieJar
-from scrapy.crawler import CrawlerProcess,Crawler
-import sys, getopt
+from scrapy.crawler import CrawlerProcess, Crawler
+import sys, argparse
 
 
 class courseSpider(scrapy.Spider):
@@ -95,27 +95,23 @@ class courseSpider(scrapy.Spider):
 
         return str[beginIndex:endIndex]
 
-def main(argv):
-    course_name=''
-    cookies=''
-    outdir=''
-    for arg in argv:
-        param = arg.split("=")
-        id=param[0]
-        value=param[1]
-        if id == '-course_name':
-            course_name = value
-        elif id == '-cookies':
-            cookies = value
-        elif id == '-outdir':
-            outdir = value
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-course_name", help="course name")
+    parser.add_argument("-cookies", help="the absolute directory of cookies.txt")
+    parser.add_argument("-outdir", help="files download path")
+
+    args = parser.parse_args()
+    print(args)
 
     process = CrawlerProcess({
         'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
     })
 
-    process.crawl(courseSpider, course_name=course_name, cookies=cookies, outdir=outdir)
+    process.crawl(courseSpider, course_name=args.course_name, cookies=args.cookies, outdir=args.outdir)
     process.start()
 
+
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    main()
