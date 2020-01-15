@@ -1,6 +1,6 @@
 import scrapy, json, requests, os, logging
 from http.cookiejar import MozillaCookieJar
-from scrapy.crawler import CrawlerProcess, Crawler
+from scrapy.crawler import CrawlerProcess
 import sys, argparse
 
 
@@ -28,17 +28,23 @@ class courseSpider(scrapy.Spider):
                                callback=self.parse_lesson)]
 
     def parse_lesson(self, response):
+        isCompleted = "Course completed" in response.text
         pages = response.xpath("//a[@palette='lecture']")
+        if(isCompleted):
+            pages = response.xpath("//a[@palette='course']")
+
         for page in pages:
             relative_url = page.xpath(".//@href").extract_first()
             lesson_url = response.urljoin(relative_url)
+            if not isCompleted or "results" != relative_url.split("/")[-2]:
+                logging.info("begin to request lessons url.... " + lesson_url)
 
-            logging.info("begin to request lessons url.... " + lesson_url)
-
-            yield scrapy.Request(url=lesson_url,
+                yield scrapy.Request(url=lesson_url,
                                  cookies=self.cookies,
                                  callback=self.parse_video,
                                  dont_filter=True)
+
+
 
     def parse_video(self, response):
         lesson_name = self.get_lesson_name(response.request.url)
