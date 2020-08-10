@@ -1,8 +1,15 @@
-from logging import log
-import scrapy, json, requests, os, logging
+import argparse
+import json
+import logging
+import os
+import sys
 from http.cookiejar import MozillaCookieJar
+from logging import log
+
+import requests
+import scrapy
 from scrapy.crawler import CrawlerProcess
-import sys, argparse
+from tqdm import tqdm
 
 
 class courseSpider(scrapy.Spider):
@@ -57,7 +64,7 @@ class courseSpider(scrapy.Spider):
 
         subtitle_url = self.get_subtitle_url(response)
 
-        self.download(subtitle_url,  lesson_name, ".vtt")
+        self.download(subtitle_url, lesson_name, ".vtt")
         self.download(video_url, lesson_name, ".mp4")
 
     def get_video_url(self, response):
@@ -99,9 +106,20 @@ class courseSpider(scrapy.Spider):
 
     def download(self, url, lesson_name, file_type):
         logging.info("begin download... " + url)
-        videoResult = requests.get(url, stream=True, cookies=self.cookies)
+        video_result = requests.get(url, stream=True, cookies=self.cookies)
+        total_length = round(
+            int(video_result.headers.get("content-length")) / 1024 / 1024
+        )
+
         with open(lesson_name + file_type, "wb") as f:
-            for chunk in videoResult.iter_content(chunk_size=1024 * 1024):
+            for chunk in tqdm(
+                iterable=video_result.iter_content(chunk_size=1024 * 1024),
+                total=total_length,
+                unit="MB",
+                miniters=1,
+                mininterval=1,
+                
+            ):
                 if chunk:
                     f.write(chunk)
         logging.info("success download... " + url)
