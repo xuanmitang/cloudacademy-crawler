@@ -11,12 +11,16 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from tqdm import tqdm
 
+from utils import blob_directory_interface
+from prettyconf import config
+
 
 class courseSpider(scrapy.Spider):
     name = "courseSpider"
 
     def __init__(self, course_name=None, cookies=None, outdir=None, *args, **kwargs):
         super(courseSpider, self).__init__(*args, **kwargs)
+        self.course_name = course_name
         self.course_url = "https://cloudacademy.com/course/%s" % course_name
         self.cookies = self.load_cookies(cookies)
         self.outdir = outdir
@@ -46,6 +50,7 @@ class courseSpider(scrapy.Spider):
         for sn, page in enumerate(pages, 1):
             relative_url = page.xpath(".//@href").extract_first()
             lesson_url = response.urljoin(relative_url)
+
             if not isCompleted or "results" != relative_url.split("/")[-2]:
                 logging.info("begin to request lessons url.... " + lesson_url)
 
@@ -58,10 +63,10 @@ class courseSpider(scrapy.Spider):
                 )
 
     def parse_video(self, response, sn):
+
         lesson_name = self.get_lesson_name(response.request.url, sn)
 
         video_url = self.get_video_url(response)
-
         subtitle_url = self.get_subtitle_url(response)
 
         self.download(subtitle_url, lesson_name, ".vtt")
@@ -107,22 +112,29 @@ class courseSpider(scrapy.Spider):
     def download(self, url, lesson_name, file_type):
         logging.info("begin download... " + url)
         video_result = requests.get(url, stream=True, cookies=self.cookies)
-        total_length = round(
-            int(video_result.headers.get("content-length")) / 1024 / 1024
-        )
+        content_length = video_result.headers.get("content-length")
+        total_length = round(int(content_length) / 1024 / 1024)
 
-        with open(lesson_name + file_type, "wb") as f:
-            for chunk in tqdm(
-                iterable=video_result.iter_content(chunk_size=1024 * 1024),
-                total=total_length,
-                unit="MB",
-                miniters=1,
-                mininterval=1,
-                
-            ):
-                if chunk:
-                    f.write(chunk)
-        logging.info("success download... " + url)
+        logging.debug(os.stat(lesson_name + file_type).st_size)
+        logging.debug(content_length)
+
+        if (
+            os.path.exists(lesson_name + file_type)
+            and os.stat(lesson_name + file_type).st_size == int(content_length)
+        ):
+            logging.info("The file already has downloaded")
+        else:
+            with open(lesson_name + file_type, "wb") as f:
+                for chunk in tqdm(
+                    iterable=video_result.iter_content(chunk_size=1024 * 1024),
+                    total=total_length,
+                    unit="MB",
+                    miniters=1,
+                    mininterval=1,
+                ):
+                    if chunk:
+                        f.write(chunk)
+            logging.info("success download... " + url)
 
     def split(self, str, beginStr, endStr):
         beginIndex = str.index(beginStr)
@@ -134,8 +146,10 @@ class courseSpider(scrapy.Spider):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--course_name", help="course name")
-    parser.add_argument("--cookies", help="the absolute directory of cookies.txt")
-    parser.add_argument("--outdir", help="files download path")
+    parser.add_argument(
+        "--cookies", help="the absolute directory of cookies.txt", default="cookies.txt"
+    )
+    parser.add_argument("--outdir", help="files download path", default="output")
 
     args = parser.parse_args()
     print(args)
@@ -152,6 +166,22 @@ def main():
     )
     process.start()
 
+    client = blob_directory_interface.DirectoryClient(CONNECTION_STRING, CONTAINER_NAME)
+    client.upload(args.outdir + "/" + args.course_name, "")
+
 
 if __name__ == "__main__":
+    try:
+        CONNECTION_STRING = config("AZURE_STORAGE_CONNECTION_STRING")
+    except KeyError:
+        logging.error("AZURE_STORAGE_CONNECTION_STRING must be set")
+        sys.exit(1)
+
+    try:
+        CONTAINER_NAME = config("AZURE_STORAGE_CONTAINER_NAME")
+    except IndexError:
+        logging.info("usage: directory_interface.py CONTAINER_NAME")
+        logging.error("error: the following arguments are required: CONTAINER_NAME")
+        sys.exit(1)
+
     main()
