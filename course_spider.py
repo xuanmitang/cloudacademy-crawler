@@ -115,13 +115,9 @@ class courseSpider(scrapy.Spider):
         content_length = video_result.headers.get("content-length")
         total_length = round(int(content_length) / 1024 / 1024)
 
-        logging.debug(os.stat(lesson_name + file_type).st_size)
-        logging.debug(content_length)
-
-        if (
-            os.path.exists(lesson_name + file_type)
-            and os.stat(lesson_name + file_type).st_size == int(content_length)
-        ):
+        if os.path.exists(lesson_name + file_type) and os.stat(
+            lesson_name + file_type
+        ).st_size == int(content_length):
             logging.info("The file already has downloaded")
         else:
             with open(lesson_name + file_type, "wb") as f:
