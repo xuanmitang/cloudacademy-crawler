@@ -69,7 +69,8 @@ class courseSpider(scrapy.Spider):
         video_url = self.get_video_url(response)
         subtitle_url = self.get_subtitle_url(response)
 
-        self.download(subtitle_url, lesson_name, ".vtt")
+        if subtitle_url is not None:
+            self.download(subtitle_url, lesson_name, ".vtt")
         self.download(video_url, lesson_name, ".mp4")
 
     def get_video_url(self, response):
@@ -92,9 +93,12 @@ class courseSpider(scrapy.Spider):
         subtitle_with_en = list(
             filter(lambda subtitle: subtitle["lang"] == "en", subtitles)
         )
-        subtitle_url = subtitle_with_en[0]["url"]
-        logging.info("success parse subtitle url... " + subtitle_url)
-        return subtitle_url
+        if subtitle_with_en:
+            subtitle_url = subtitle_with_en[0]["url"]
+            logging.info("success parse subtitle url... " + subtitle_url)
+            return subtitle_url
+        else:
+            return None
 
     def parse_response_text(self, html_text, key_word):
         res = html_text
