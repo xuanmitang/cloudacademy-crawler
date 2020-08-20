@@ -1,6 +1,6 @@
 #1.install
 ```
-pip3 install cloudacademy-crawler
+poetry install
 ```
 
 #2.download cookies.txt file
@@ -13,5 +13,5 @@ pip3 install cloudacademy-crawler
 
 #3.run command in terminal
 ```
-ca_spider -course_name=managing-findings-from-multiple-accounts-using-amazon-guardduty -cookies=/<cookie_dir>/cookies.txt -outdir=output
+poetry run course_spider.py --course_name xxx [--cookies=cookies.txt --outdir=output]
 ```
